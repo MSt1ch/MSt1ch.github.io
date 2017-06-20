@@ -27,7 +27,9 @@ body textarea:required:valid
 
 html, body
 	height: 100%
-
+	background-color: $dark
+a:hover, a:active, a:focus
+	text-decoration: none
 body
 	font-size: 16px
 	min-width: 320px
@@ -36,7 +38,12 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
-	background-color: #1B1E24
+	color: #fff
+	
+.dark-section
+	background-color: $dark
+.green-section
+	background-color: $accent
 
 .img-responsive
 	display: block
@@ -44,51 +51,85 @@ body
 	height: auto
 
 .main-header
-	height: 100px
-	margin-bottom: 10px
-	
+	height: 70px
+	margin-bottom: 60px
+	&::after
+		content: ''
+		background-color: $accent
+		width: 95%
+		height: 1px
+		margin-left: 2.5%
+		display: inline-block
+		transform: rotate(-2deg)
 	.main-nav
-		position: relative
+		height: 100%
+		width: 95%
+		margin: 0 auto
+		
 	.icon_arrow
-		position: absolute
-		right: 50%
+		//position: absolute
+		right: 49%
 		font-size: 50px
-		top: -7px
+		line-height: 50px
+		top: 0px
+		transition: all .1s ease-out
+		display: inline-block
+		z-index: 100
+		&:hover
+			right: 49.9%
 		a
-			color: #2eb398
-			transition: all .25s ease
-
+			color: $accent
+			transition: all .25s ease-out
+			display: inline-block
 			&:hover
 				color: #fff
-				transform: scale(1.07, 1.07)
+				font-size: 52px
+				
 ul.main-nav_list
 	text-align: center
-	margin: 0 auto
+	margin: 0
 	padding: 0
 	list-style-type: none
 	width: 100%
 	padding-top: 20px
-	position: absolute
+	//position: absolute
 
-	left: 3%
+	//left: -1%
 	li
 		display: inline-block
 		margin-right: 20px
 		text-transform: uppercase
 		font-size: 15px
-		font-weight: 200
+		font-weight: 400
 		a
 			color: #FFF
 			transition: color .25s ease-out
+			padding-bottom: 3px
 			&:hover
 				text-decoration: none
-				color: #2eb398
-		&:nth-child(2)
-			margin-right: 80px
+				color: $accent
+				border-bottom: 3px solid $accent
+		&:nth-child(3)
+			margin-left: -5px
+			margin-right: 25px
+			a
+				&:hover
+					border-bottom: none
 		&.active
 			a
-				color: #2eb398
-
+				color: $accent
+				border-bottom: 3px solid $accent
+				cursor: default
+		&:last-child
+			margin-right: 0
+.portfolio
+	margin-bottom: 30px
+	text-align: center
+	h1
+		
+		text-transform: uppercase
+		font-weight: 500
+		display: inline-block
 .base
 	img
 		width: auto
@@ -99,6 +140,7 @@ ul.main-nav_list
   width: 300px
   height: 300px
   position: relative
+  margin: 0 auto 50px
   .overlay
     display: block
     width: 310px
@@ -126,7 +168,7 @@ ul.main-nav_list
       
     .bg
       
-      background-color: #2eb398
+      background-color: $accent
       opacity: 0.8
       display: block
     .details
@@ -180,12 +222,92 @@ ul.main-nav_list
       background: #fff
       color: #2f3644
 
-/* different shapes
+.wrap-alignment-text
 
-/* hover effect
+	transform: rotate(2deg)
+	.skills-wrap
+		margin-top: 40px
+		text-align: center
+		em
+			font-family: 'tech-icons'
+			font-size: 50px
+			color: $dark
+			margin-right: 10px
+			line-height: 1
 
-/* content styles
+.skills
+	height: 200px
+	color: $dark
+	transform: rotate(-2deg)
+	width: 100%
+	margin-bottom: 100px
 
+.h2
+	text-transform: uppercase
+	font-weight: 700
+	text-align: center	
+
+
+.about_me
+	height: 600px
+
+
+
+.hex
+  position: relative
+  width: 300px
+  height: 173.21px
+  margin: 86.60px 0
+  background-image: url(../img/bg-3.jpg)
+  background-size: auto 346.4102px
+  background-position: center
+
+.hexTop, .hexBottom
+  position: absolute
+  z-index: 1
+  width: 212.13px
+  height: 212.13px
+  overflow: hidden
+  -webkit-transform: scaleY(0.5774) rotate(-45deg)
+  -ms-transform: scaleY(0.5774) rotate(-45deg)
+  transform: scaleY(0.5774) rotate(-45deg)
+  background: inherit
+  left: 43.93px
+
+
+
+.hexTop:after, .hexBottom:after
+  content: ""
+  position: absolute
+  width: 300.0000px
+  height: 173.20508075688775px
+  -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-86.6025px)
+  -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-86.6025px)
+  transform: rotate(45deg) scaleY(1.7321) translateY(-86.6025px)
+  -webkit-transform-origin: 0 0
+  -ms-transform-origin: 0 0
+  transform-origin: 0 0
+  background: inherit
+
+.hexTop
+  top: -106.0660px
+  &:after
+    background-position: center top
+
+.hexBottom
+  bottom: -106.0660px
+  &:after
+    background-position: center bottom
+
+.hex:after
+  content: ""
+  position: absolute
+  top: 0.0000px
+  left: 0
+  width: 300.0000px
+  height: 173.2051px
+  z-index: 2
+  background: inherit
 
 
 
