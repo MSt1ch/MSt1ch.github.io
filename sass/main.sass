@@ -124,7 +124,7 @@ ul.main-nav_list
 			margin-right: 0
 
 .social_buttons
-	position: absolute
+	position: fixed
 	right: 0
 	top: 30%
 	display: inline-block
@@ -135,21 +135,22 @@ ul.main-nav_list
 
 	a
 		display: block
-		border-bottom: 1px solid $accent
-		border-left: 1px solid $accent
+		border-bottom: 1px solid $dark
+		border-left: 1px solid $dark
 		line-height: 1
 		padding: 10px 0
 		transition: color .25s ease
+		background-color: $accent
 		&:hover
 			border-bottom-color: #fff
 			i
 				color: #fff
 		&:first-child
-			border-top: 1px solid $accent
+			border-top: 1px solid $dark
 
 		i
 			font-size: 30px
-			color: $accent
+			color: $dark
 			transition: color .25s ease
 
 .scroll_button a
@@ -294,15 +295,8 @@ ul.main-nav_list
 .wrap-alignment-text
 
 	transform: rotate(2deg)
-	.skills-wrap
-		margin-top: 40px
-		text-align: center
-		em
-			font-family: 'tech-icons'
-			font-size: 50px
-			color: $dark
-			margin-right: 10px
-			line-height: 1
+
+			
 
 .skills
 	height: 200px
@@ -313,10 +307,17 @@ ul.main-nav_list
 	.skills-wrap
 		transform: rotate(2deg)
 		height: 65px
+		margin-top: 40px
+		text-align: center
 		
 		em
 			display: inline-block	
 			transition: all .25s ease
+			font-family: 'tech-icons'
+			font-size: 50px
+			color: $dark
+			margin-right: 10px
+			line-height: 1
 			&:hover
 				font-size: 60px
 				color: #fff
@@ -331,67 +332,77 @@ ul.main-nav_list
 	.about_me__text
 		color: $accent
 
-
-.hex
-  position: relative
-  width: 300px
-  height: 173.21px
-  margin: 86.60px 0
-  background-image: url(../img/bg-3.jpg)
-  background-size: auto 346.4102px
-  background-position: center
-
-.hexTop, .hexBottom
-  position: absolute
-  z-index: 1
-  width: 212.13px
-  height: 212.13px
+.hexagon_image
   overflow: hidden
-  -webkit-transform: scaleY(0.5774) rotate(-45deg)
-  -ms-transform: scaleY(0.5774) rotate(-45deg)
-  transform: scaleY(0.5774) rotate(-45deg)
-  background: inherit
-  left: 43.93px
-
-
-
-.hexTop:after, .hexBottom:after
-  content: ""
-  position: absolute
-  width: 300.0000px
-  height: 173.20508075688775px
-  -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-86.6025px)
-  -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-86.6025px)
-  transform: rotate(45deg) scaleY(1.7321) translateY(-86.6025px)
-  -webkit-transform-origin: 0 0
-  -ms-transform-origin: 0 0
-  transform-origin: 0 0
-  background: inherit
-
-.hexTop
-  top: -106.0660px
+  width: 100%
+  margin: 0 auto
   &:after
-    background-position: center top
-
-.hexBottom
-  bottom: -106.0660px
-  &:after
-    background-position: center bottom
-
-.hex:after
-  content: ""
-  position: absolute
-  top: 0.0000px
-  left: 0
-  width: 300.0000px
-  height: 173.2051px
-  z-index: 2
-  background: inherit
-
-
-
-
-
+    content: ""
+    display: block
+    clear: both
+  .hexagon_image__wrap
+    position: relative
+    width:  80%   // = (100-2.5) / 3.5  27.85714285714286%
+    padding-bottom: 92.37875288683603%     // =  width /0.866  32.16760145166612%
+    float: left
+    overflow: hidden
+    visibility: hidden
+    transform: rotate(-60deg) skewY(30deg)
+    *
+      position: absolute
+      visibility: visible
+    > .hexagon_image__text
+      width: 100%
+      height: 100%
+      text-align: center
+      color: #fff
+      overflow: hidden
+      transform: skewY(-30deg) rotate(60deg)
+    img
+      left: -100%
+      right: -100%
+      width: auto
+      height: 100%
+      margin: 0 auto
+  .hexagon_image__text
+    h3, p
+      width: 90%
+      padding: 0 5%
+      background-color: #008080
+      background-color: rgba(0, 128, 128, 0.8)
+      font-family: 'Raleway', sans-serif
+      transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out
+  .hexagon_image__wrap
+    h3
+      bottom: 110%
+      font-weight: normal
+      font-size: 1.5em
+      padding-top: 100%
+      padding-bottom: 100%
+      &:after
+        content: ''
+        display: block
+        position: absolute
+        bottom: -1px
+        left: 0
+        width: 100%
+        text-align: center
+        z-index: 1
+        border-bottom: 2px solid #fff
+    p
+      font-size: 1.5em
+      padding-top: 50%
+      top: 110%
+      padding-bottom: 50%
+    .hexagon_image__text:hover
+      h3
+        bottom: 40%
+        padding-bottom: 10%
+        width: 100%
+      p
+        top: 40%
+        padding-top: 10%
+        width: 100%
 
 
 
