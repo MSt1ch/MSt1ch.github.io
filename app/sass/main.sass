@@ -39,12 +39,16 @@ body
 	overflow-x: hidden
 	opacity: 1
 	color: #fff
-	
+
+
+.color_white
+ 	color: #fff	
 .dark-section
 	background-color: $dark
 .green-section
 	background-color: $accent
-
+.accent
+	color: $accent
 .img-responsive
 	display: block
 	max-width: 100%
@@ -63,27 +67,31 @@ body
 		transform: rotate(-2deg)
 	.main-nav
 		height: 100%
-		width: 95%
 		margin: 0 auto
 		
-	.icon_arrow
-		//position: absolute
-		right: 49%
-		font-size: 50px
-		line-height: 50px
-		top: 0px
-		transition: all .1s ease-out
+.logo-icon
+	position: absolute
+	left: 10%
+	top: 4px
+	transition: all .1s ease-out
+	display: inline-block
+	z-index: 100
+	.icon-logo
 		display: inline-block
-		z-index: 100
+		width: 25px
+		height: 35px
+		margin-left: -12px
+		border-left: 7px solid $accent
+		border-bottom: 10px solid #fff
+		border-radius: 5px
+		transform: rotateZ(-45deg)
+		box-sizing: border-box
+		transition: all .25s ease-out
 		&:hover
-			right: 49.9%
-		a
-			color: $accent
-			transition: all .25s ease-out
-			display: inline-block
-			&:hover
-				color: #fff
-				font-size: 52px
+			border-color: $accent
+	span
+		font-size: 24px	
+		
 				
 ul.main-nav_list
 	text-align: center
@@ -108,13 +116,8 @@ ul.main-nav_list
 			&:hover
 				text-decoration: none
 				color: $accent
-				border-bottom: 3px solid $accent
-		&:nth-child(3)
-			margin-left: -5px
-			margin-right: 25px
-			a
-				&:hover
-					border-bottom: none
+				border-bottom: 3px solid $accent	
+
 		&.active
 			a
 				color: $accent
@@ -160,8 +163,6 @@ ul.main-nav_list
   transition: opacity .2s ease
   display: inline-block
   40px
-  span.color_white
-  	color: #fff
   &:hover
   	opacity: 1
 
