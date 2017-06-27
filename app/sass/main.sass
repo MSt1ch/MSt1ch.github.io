@@ -91,7 +91,9 @@ body
 			border-color: $accent
 	span
 		font-size: 24px	
-		
+
+.logo-icon.mobile
+	position: static
 				
 ul.main-nav_list
 	text-align: center
@@ -134,8 +136,8 @@ ul.main-nav_list
 	height: 200px
 	width: 50px
 	background-color: transparent
-	z-index: 2000
-
+	z-index: 20000
+	transition: all .25s ease
 	a
 		display: block
 		border-bottom: 1px solid $dark
@@ -193,6 +195,69 @@ ul.main-nav_list
     opacity: 0
 
 
+#my-menu
+	z-index: 1000!important
+#mm-blocker
+	z-index: 10000	
+.hamburger
+	display: none
+	position: absolute
+	left: 0
+	top: 34px
+	z-index: 1001
+	.hamburger-box
+		width: 34px
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+	width: 34px
+	border-radius: 0
+	color: #fff
+	height: 2px
+	background-color: #FFF
+
+.mm-navbar 
+	height: auto
+	position: relative
+	border: none
+.mm-panel.mm-hasnavbar.mm-opened.mm-current
+
+html.mm-opened
+	overflow-y: scroll
+.mm-panels > .mm-panel.mm-hasnavbar
+	padding: 40px 0 0
+.mm-listview > li:not(.mm-divider)::after
+	display: none
+.mm-menu.mm-theme-black .mm-listview>li.mm-selected>a:not(.mm-next), .mm-menu.mm-theme-black .mm-listview>li.mm-selected>span
+	background-color: transparent	
+	color: $accent		
+.mm-panels>.mm-panel:after, .mm-panels>.mm-panel:before
+	height: 0
+.mm-panels>.mm-panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
+	margin: 0
+
+html.mm-opening.mm-menu.mm-opened[class*=mm-pagedim]~#mm-blocker
+	opacity: 0
+.mm-menu.mm-widescreen.mm-theme-black.mm-effect-menu-slide.mm-pagedim-black.mm-offcanvas.mm-right.mm-current.mm-opened
+	opacity: .95
+.mm-listview 
+	> li
+		> a
+			transition: all .25s ease
+			padding-left: 14%
+			padding-right: 14%
+			padding-top: 8px
+			font-size: 18px
+			text-transform: uppercase
+			&:hover
+
+				color: $dark
+				background-color: $accent
+				opacity: .7
+				&::before
+					color: $accent
+			
+	 	&.active
+			&>a
+				color: $accent
 
 			
 .portfolio
@@ -407,8 +472,5 @@ ul.main-nav_list
         top: 40%
         padding-top: 10%
         width: 100%
-
-
-
 
 @import "media" // Всегда в конце
