@@ -262,7 +262,7 @@ html.mm-opening.mm-menu.mm-opened[class*=mm-pagedim]~#mm-blocker
 			
 .portfolio
 	padding-top: 60px
-	margin-bottom: 30px
+	margin-bottom: 100px
 	text-align: center
 	h1
 		
@@ -365,14 +365,15 @@ html.mm-opening.mm-menu.mm-opened[class*=mm-pagedim]~#mm-blocker
 
 	transform: rotate(2deg)
 
-			
+.rotate_deg
+	transform: rotate(-2deg)			
 
 .skills
-	height: 200px
+	height: 250px
 	color: $dark
-	transform: rotate(-2deg)
 	width: 100%
 	margin-bottom: 100px
+	padding-top: 30px
 	.skills-wrap
 		transform: rotate(2deg)
 		height: 65px
@@ -397,7 +398,7 @@ html.mm-opening.mm-menu.mm-opened[class*=mm-pagedim]~#mm-blocker
 
 
 .about_me
-	height: 600px
+	margin-bottom: 100px
 	.about_me__text
 		color: $accent
 
@@ -472,5 +473,53 @@ html.mm-opening.mm-menu.mm-opened[class*=mm-pagedim]~#mm-blocker
         top: 40%
         padding-top: 10%
         width: 100%
+
+.personal-qualities
+	min-height: 190px
+	text-align: center
+	padding-top: 40px
+	margin-bottom: 100px
+	font-family: roboto
+	.wrap_qualities
+
+		color: $dark
+		font-size: 16px
+		text-transform: uppercase
+		line-height: 1.3
+		font-weight: 500
+		margin-top: 20px
+		margin-bottom: 20px
+		display: inline-block
+		i
+			font-size: 40px
+			padding: 10px 0
+			display: block
+
+.contacts
+	transform: rotate(-2deg)
+	.wrap_list
+		text-align: center
+	.contact_list
+		list-style-type: none
+		color: $accent
+		text-align: left
+		display: inline-block
+		padding: 0
+		a
+			color: $accent
+			font-family: roboto 
+			font-weight: 500
+			transition: color .25s ease
+			i
+				font-size: 17px
+				display: inline-block
+				margin-right: 10px
+				&.fa-mobile
+					padding-left: 4px
+					font-size: 20px
+			&:hover
+				color: #fff				
+
+
 
 @import "media" // Всегда в конце
