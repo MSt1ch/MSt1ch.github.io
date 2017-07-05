@@ -1,0 +1,37 @@
+@font-face {
+			font-family: "MyriadProRegular";
+			src: url("MyriadProRegular/MyriadProRegular.eot");
+			src: url("MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+			url("MyriadProRegular/MyriadProRegular.woff") format("woff"),
+			url("MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+	@font-face {
+			font-family: "MyriadProBold";
+			src: url("MyriadProBold/MyriadProBold.eot");
+			src: url("MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+			url("MyriadProBold/MyriadProBold.woff") format("woff"),
+			url("MyriadProBold/MyriadProBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "MyriadProItalic";
+			src: url("MyriadProItalic/MyriadProItalic.eot");
+			src: url("MyriadProItalic/MyriadProItalic.eot?#iefix")format("embedded-opentype"),
+			url("MyriadProItalic/MyriadProItalic.woff") format("woff"),
+			url("MyriadProItalic/MyriadProItalic.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+	@font-face {
+			font-family: "OpenSansRegular";
+			src: url("OpenSansRegular/OpenSansRegular.eot");
+			src: url("OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+			url("OpenSansRegular/OpenSansRegular.woff") format("woff"),
+			url("OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}

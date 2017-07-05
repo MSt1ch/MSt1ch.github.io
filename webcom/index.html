@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <title>Главная страница
+    </title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <div class="wrap">
+            <div class="logo"><a href="#top-slider"><img src="static/img/content/logo.png" alt=""></a></div>
+            <ul class="main-nav__list">
+              <li><a class="main-nav__link" href="#top-slider">Главная</a></li>
+              <li><a class="main-nav__link" href="#our-jobs">Портфолио</a></li>
+              <li><a class="main-nav__link" href="#advantages">Преимущества</a></li>
+              <li class="last"><a class="main-nav__link" href="#reviews">Контакты	</a></li>
+            </ul>
+            <ul class="tel-number__list">
+              <li><a class="tel-number__link" href="tel:+375 (29) 123-45-67">+375 (29) 123-45-67	</a></li>
+              <li class="last"><a class="tel-number__link" href="tel:+375 (33) 123-45-67">+375 (33) 123-45-67	</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="navbar">
+        <ul class="navbar__list">
+          <li><a class="active" href="#top-slider"></a></li>
+          <li><a href="#our-jobs"></a></li>
+          <li><a href="#advantages"></a></li>
+          <li class="last"><a href="#reviews"></a></li>
+        </ul>
+      </div><a class="button_up" href="#top-slider"><i class="fa fa-angle-up"></i></a>
+      <div class="mobile-buttton"><span></span><span></span><span></span></div>
+      <div class="mobile-menu">
+        <ul class="mobile-menu__list">
+          <li><a class="main-nav__link" href="#top-slider">Главная</a></li>
+          <li><a class="main-nav__link" href="#our-jobs">Портфолио</a></li>
+          <li><a class="main-nav__link" href="#advantages">Преимущества</a></li>
+          <li><a class="main-nav__link" href="#reviews">Контакты	</a></li>
+        </ul>
+      </div>
+      <div class="popup">
+        <div class="popup__form-wrap">
+          <div class="button-cancel"><i class="fa fa-times"></i></div>
+          <h2>Оформите заявку</h2>
+          <form class="popup__form" novalidate>
+            <label class="form-group"><span class="color-element">Ваше имя</span>
+              <input type="text" name="name" placeholder="Иванов Иван" data-validation-required-message="Пожалуйста, введите ваше имя" required><span class="help-block text-danger"></span>
+            </label>
+            <label class="form-group"><span class="color-element">E-mail</span>
+              <input type="email" name="email" placeholder="Example@mysite.com" data-validation-required-message="Email не введен" data-validation-email-message="Адресс почты указан некорректно" required><span class="help-block text-danger"></span>
+            </label>
+            <label class="form-group"><span class="color-element">Отзыв</span>
+              <textarea rows="5" name="text" placeholder="Ваше сообщение" data-validation-required-message="Вы не ввели сообщение" required></textarea><span class="help-block text-danger"></span>
+            </label>
+            <button class="submit_b">Отправить</button>
+          </form>
+        </div>
+      </div>
+      <section class="top-slider" id="top-slider">
+        <div class="button-wrap"><a class="button-down" href="#our-jobs"> <i class="fa fa-angle-down"></i></a></div>
+        <div class="owl-carousel owl-theme">
+          <div class="top-slider__item" style="background-image: url('static/img/general/slider.jpg');">
+            <div class="container">
+              <div class="top-slider__text">
+                <h1>Главный заголовок</h1>
+                <div class="line-decoration"><img src="static/img/content/slide-separator.png" alt=""></div>
+                <div class="top-slider__description">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis necessitatibus tempore illum, magni ipsa accusantium quaerat itaque vero.		</p>
+                </div>
+                <button class="top-slider__ button">Оформить заявку</button>
+              </div>
+            </div>
+          </div>
+          <div class="top-slider__item" style="background-image: url('static/img/general/bg-our-jobs.jpg');">
+            <div class="container">
+              <div class="top-slider__text">
+                <h1>Второй заголовок</h1>
+                <div class="line-decoration"><img src="static/img/content/slide-separator.png" alt=""></div>
+                <div class="top-slider__description">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis necessitatibus tempore illum, magni ipsa accusantium quaerat itaque vero.		</p>
+                </div>
+                <button class="top-slider__ button">Оформить заявку</button>
+              </div>
+            </div>
+          </div>
+          <div class="top-slider__item" style="background-image: url('static/img/general/slider.jpg');">
+            <div class="container">
+              <div class="top-slider__text">
+                <h1>Третий заголовок</h1>
+                <div class="line-decoration"><img src="static/img/content/slide-separator.png" alt=""></div>
+                <div class="top-slider__description">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis necessitatibus tempore illum, magni ipsa accusantium quaerat itaque vero.		</p>
+                </div>
+                <button class="top-slider__ button">Оформить заявку</button>
+              </div>
+            </div>
+          </div>
+          <div class="top-slider__item" style="background-image: url('static/img/general/bg-our-jobs.jpg');">
+            <div class="container">
+              <div class="top-slider__text">
+                <h1>Четвертый заголовок</h1>
+                <div class="line-decoration"><img src="static/img/content/slide-separator.png" alt=""></div>
+                <div class="top-slider__description">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis necessitatibus tempore illum, magni ipsa accusantium quaerat itaque vero.		</p>
+                </div>
+                <button class="top-slider__ button">Оформить заявку</button>
+              </div>
+            </div>
+          </div>
+          <div class="top-slider__item" style="background-image: url('static/img/general/slider.jpg');">
+            <div class="container">
+              <div class="top-slider__text">
+                <h1>Пятый заголовок</h1>
+                <div class="line-decoration"><img src="static/img/content/slide-separator.png" alt=""></div>
+                <div class="top-slider__description">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis necessitatibus tempore illum, magni ipsa accusantium quaerat itaque vero.		</p>
+                </div>
+                <button class="top-slider__ button">Оформить заявку</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="our-jobs" id="our-jobs" style="background-image: url('static/img/general/bg-our-jobs.jpg');">
+        <div class="container">
+          <div class="header__section">
+            <h2>Наша работа</h2><img src="static/img/content/separator.png" alt="">
+            <div class="header__description">
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores molestiae optio pariatur explicabo voluptate, quia natus quasi ametfuga voluptatem reprehenderit esse tempore nisi deserunt, perferendis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container container_wide">
+          <div class="our-jobs__item"><img src="static/img/general/photo-jobs.png" alt="">
+            <div class="item__description">
+              <h3>название работы</h3><img src="static/img/content/separator.png" alt="">
+              <p>описание работы</p>
+            </div>
+          </div>
+          <div class="our-jobs__item our-jobs__item_second"><img src="static/img/general/photo-jobs.png" alt="">
+            <div class="item__description">
+              <h3>название работы</h3><img src="static/img/content/separator.png" alt="">
+              <p>описание работы</p>
+            </div>
+          </div>
+          <div class="our-jobs__item our-jobs__item_third"><img src="static/img/general/photo-jobs.png" alt="">
+            <div class="item__description">
+              <h3>название работы</h3><img src="static/img/content/separator.png" alt="">
+              <p>описание работы</p>
+            </div>
+          </div>
+          <div class="our-jobs__item"><img src="static/img/general/photo-jobs.png" alt="">
+            <div class="item__description">
+              <h3>название работы</h3><img src="static/img/content/separator.png" alt="">
+              <p>описание работы</p>
+            </div>
+          </div>
+          <div class="our-jobs__item our-jobs__item_second"><img src="static/img/general/photo-jobs.png" alt="">
+            <div class="item__description">
+              <h3>название работы</h3><img src="static/img/content/separator.png" alt="">
+              <p>описание работы</p>
+            </div>
+          </div>
+          <div class="our-jobs__item our-jobs__item_third"><img src="static/img/general/photo-jobs.png" alt="">
+            <div class="item__description">
+              <h3>название работы</h3><img src="static/img/content/separator.png" alt="">
+              <p>описание работы</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages" id="advantages">
+        <div class="container">
+          <div class="header__section">
+            <h2>почему мы</h2><img src="static/img/content/separator.png" alt="">
+            <div class="header__description">
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores molestiae optio pariatur explicabo voluptate, quia natus quasi ametfuga voluptatem reprehenderit esse tempore nisi deserunt, perferendis.</p>
+            </div>
+          </div>
+          <div class="advantages__wrap">
+            <div class="advantages__item"><img class="icon-advantages" src="static/img/content/Monitor.png" alt="">
+              <h3>Преимущество 1</h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, blanditiis voluptatem.</p>
+            </div>
+            <div class="advantages__item"><img class="icon-advantages" src="static/img/content/Magic-wand.png" alt="">
+              <h3>Преимущество 2</h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, blanditiis voluptatem.</p>
+            </div>
+            <div class="advantages__item"><img class="icon-advantages" src="static/img/content/Rocket.png" alt="">
+              <h3>Преимущество 3</h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, blanditiis voluptatem.</p>
+            </div>
+            <div class="advantages__item"><img class="icon-advantages" src="static/img/content/Globe-2.png" alt="">
+              <h3>Преимущество 4</h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, blanditiis voluptatem.</p>
+            </div>
+          </div>
+          <div class="advantages__wrap">
+            <div class="advantages__item"><img class="icon-advantages" src="static/img/content/Settings.png" alt="">
+              <h3>Преимущество 5</h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, blanditiis voluptatem.</p>
+            </div>
+            <div class="advantages__item"><img class="icon-advantages" src="static/img/content/Layers.png" alt="">
+              <h3>Преимущество 6</h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, blanditiis voluptatem.</p>
+            </div>
+            <div class="advantages__item"><img class="icon-advantages" src="static/img/content/Wrench.png" alt="">
+              <h3>Преимущество 7</h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, blanditiis voluptatem.</p>
+            </div>
+            <div class="advantages__item"><img class="icon-advantages" src="static/img/content/note.png" alt="">
+              <h3>Преимущество 8</h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, blanditiis voluptatem.							</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <div class="header__section">
+            <h2>добавьте отзыв</h2><img src="static/img/content/separator.png" alt="">
+            <div class="header__description">
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores molestiae optio pariatur explicabo voluptate, quia natus quasi ametfuga voluptatem reprehenderit esse tempore nisi deserunt, perferendis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-narrow">
+          <div class="form-wrap">
+            <form class="main_form" novalidate>
+              <label class="form-group"><span class="color-element">Ваше имя</span>
+                <input type="text" name="name" placeholder="Иванов Иван" data-validation-required-message="Пожалуйста, введите ваше имя" required><span class="help-block text-danger"></span>
+              </label>
+              <label class="form-group"><span class="color-element">E-mail</span>
+                <input type="email" name="email" placeholder="Example@mysite.com" data-validation-required-message="Email не введен" data-validation-email-message="Адресс почты указан некорректно" required><span class="help-block text-danger"></span>
+              </label>
+              <label class="form-group"><span class="color-element">Ваша должность</span>
+                <input type="text" name="post" placeholder="Должность" data-validation-required-message="Пожалуйста, введите вашу должность" required><span class="help-block text-danger"></span>
+              </label>
+              <label class="form-group"><span class="color-element">Отзыв</span>
+                <textarea rows="5" name="text" placeholder="Ваше сообщение" data-validation-required-message="Вы не ввели сообщение" required></textarea><span class="help-block text-danger"></span>
+              </label>
+              <label class="form-group form-group_upload">
+                <div class="file-upload">+
+                  <input class="upload" type="file" name="image" data-validation-required-message="Вы не ввели сообщение" accept="image/jpeg">
+                </div><span class="color-element">Фото</span><span class="help-block text-danger"></span>
+              </label>
+              <label class="form-group"><span class="color-element">Введите код с картинки</span>
+                <input class="captcha" type="text" name="captcha" data-validation-required-message="Пожалуйста, введите еще раз" required><span class="help-block text-danger"></span>
+              </label>
+              <button class="submit_b">Отправить</button>
+            </form>
+          </div>
+          <div class="contacts">
+            <h3 class="contacts-first__h3">наш адрес</h3>
+            <p>г. Минск, ул. Скрыганова, 6А, 4 этаж</p>
+            <h3>звоните</h3><span><a href="tel:+375 (29) 123-45-67">+375 (29) 123-45-67</a></span><span class="span-comma">,	<a href="tel:+375 (33) 123-45-67">+375 (33) 123-45-67</a></span>
+            <h3>пишите</h3><span><a href="mailto:info@promo-webcom.by">info@promo-webcom.by</a></span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="section fp-auto-height main-footer" style="background-image: url('static/img/general/map-footer.png');">
+      <div class="container container__footer">
+        <div class="main-footer__logo"><a href="#"><img src="static/img/content/logo.png" alt=""></a><img class="separator" src="static/img/content/separator.png" alt="">
+          <p>Дисклеймер компании</p>
+        </div>
+        <div class="main-footer__social">
+          <h3>Мы в соцсетях</h3><img src="static/img/content/separator.png" alt="">
+          <div class="social__buttons"><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-facebook"></i></a></div>
+        </div>
+        <div class="main-footer__address">
+          <h3>адрес</h3><img src="static/img/content/separator.png" alt="">
+          <p>г. Минск, ул. Скрыганова, 6А,<br>4 этаж</p>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <p>Copyrights 2015 © Webcom Media 			</p>
+    </div>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
