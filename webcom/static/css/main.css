@@ -707,7 +707,7 @@ header .wrap {
   left: 0;
   right: 0;
   background-color: rgba(0,0,0,0.75);
-  z-index: 4000;
+  z-index: 40002;
 }
 .popup.show {
   display: -ms-flexbox;
@@ -1132,7 +1132,7 @@ textarea::placeholder {
 }
 .form-wrap .form-group .help-block.text-danger {
   position: absolute;
-  top: 0;
+  top: -10px;
   right: 0;
   color: #ff8207;
 }

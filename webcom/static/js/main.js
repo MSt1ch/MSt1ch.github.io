@@ -60,9 +60,11 @@
 	
 var navbar = $('.navbar__list a')
 var main_nav = $('.main-nav__list a')
-
+	
 	function onScroll(event){
 	  var scrollPos = $(document).scrollTop();
+
+	  $('.main-nav__list a').removeClass('active')
 	  if(scrollPos >= 900){
 	    $(".button_up").fadeIn('slow')
 	  } else{
