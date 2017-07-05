@@ -448,7 +448,6 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   text-align: center;
-  font-size: 48px;
 }
 .header__section img {
   margin: 25px auto 0;
@@ -472,6 +471,7 @@ header {
   width: 100%;
   text-align: center;
   position: fixed;
+  top: -10px;
   z-index: 3000;
 }
 header .container {
@@ -489,7 +489,7 @@ header .wrap {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  width: 230px;
+  min-width: 230px;
 }
 .main-nav__list {
   height: 100%;
@@ -503,7 +503,7 @@ header .wrap {
   display: inline-block;
   margin-right: 20px;
   max-height: 100%;
-  width: 140px;
+  min-width: 140px;
   transition: all 0.25s ease;
 }
 .main-nav__list li.last {
@@ -812,6 +812,7 @@ textarea::placeholder {
 }
 .top-slider {
   display: block;
+  margin-top: 10px;
   position: relative;
 }
 .top-slider .top-slider__item {
@@ -900,7 +901,6 @@ textarea::placeholder {
 .owl-theme .owl-nav {
   display: block;
   width: 100%;
-  max-width: 1400px;
   position: absolute;
   top: 50%;
   font-size: 80px;
@@ -1348,6 +1348,9 @@ textarea::placeholder {
   .top-slider__text h1 {
     font-size: 30px;
     margin-bottom: 35px;
+  }
+  .header__section h2 {
+    font-size: 26px;
   }
   .owl-carousel .owl-item img {
     margin: 0 auto;

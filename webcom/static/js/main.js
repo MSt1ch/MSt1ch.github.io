@@ -55,9 +55,11 @@
 	load();
 	
 	
-	$(document).on("scroll", onScroll,);	
+	$(document).on("scroll", onScroll);	
 
 	
+var navbar = $('.navbar__list a')
+var main_nav = $('.main-nav__list a')
 
 	function onScroll(event){
 	  var scrollPos = $(document).scrollTop();
@@ -66,8 +68,9 @@
 	  } else{
 	          $(".button_up").fadeOut('normal')
 	        }
-	  var navbar = $('.navbar__list a')
+	  
 	  changeLink(navbar, scrollPos)
+	  changeLink(main_nav, scrollPos)
 
 	}
 
@@ -75,7 +78,6 @@
 
 	function changeLink(event, scrollPos){
 		event.each(function () {
-
 			var actLink = $(this);
 	    var linkElement = $(actLink.attr('href'));
 	    if (linkElement.position().top - 125 < scrollPos && linkElement.position().top + linkElement.height() > scrollPos) {
@@ -97,20 +99,26 @@
 
 	  e.preventDefault();
 	  $(document).off("scroll");
-	  
-	  $('.main-nav__list a').each(function () {
-	    $(this).removeClass('active');
-	  })
-	  $(this).addClass('active');
-	  
+
 	  $('html, body').stop().animate({
-	    'scrollTop': $target.offset().top-115
+	    'scrollTop': $target.offset().top-105
 	  }, 1000,  function () {
 	    window.location.hash = target;
 	    $(document).on("scroll", onScroll);
-	    $('.main-nav__list a').removeClass("active");
-	    $('.button_up').fadeOut('normal');
+
+	    if($(document).scrollTop() < 900){
+	    	$('.button_up').fadeOut('normal');
+	    	main_nav.removeClass('active');
+	    	navbar.removeClass('active');
+	  	}
 	  });
+	  
+	  // $('.main-nav__list a').each(function () {
+	  //   $(this).removeClass('active');
+	  // })
+	  // $(this).addClass('active');
+	  
+	  
 	});
 
 	

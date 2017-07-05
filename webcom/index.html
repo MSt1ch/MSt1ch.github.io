@@ -17,7 +17,7 @@
           <div class="wrap">
             <div class="logo"><a href="#top-slider"><img src="static/img/content/logo.png" alt=""></a></div>
             <ul class="main-nav__list">
-              <li><a class="main-nav__link" href="#top-slider">Главная</a></li>
+              <li><a class="main-nav__link js_first" href="#top-slider">Главная</a></li>
               <li><a class="main-nav__link" href="#our-jobs">Портфолио</a></li>
               <li><a class="main-nav__link" href="#advantages">Преимущества</a></li>
               <li class="last"><a class="main-nav__link" href="#reviews">Контакты	</a></li>
@@ -31,7 +31,7 @@
       </header>
       <div class="navbar">
         <ul class="navbar__list">
-          <li><a class="active" href="#top-slider"></a></li>
+          <li><a class="active js_first" href="#top-slider"></a></li>
           <li><a href="#our-jobs"></a></li>
           <li><a href="#advantages"></a></li>
           <li class="last"><a href="#reviews"></a></li>
@@ -249,7 +249,7 @@
               </label>
               <label class="form-group form-group_upload">
                 <div class="file-upload">+
-                  <input class="upload" type="file" name="image" data-validation-required-message="Вы не ввели сообщение" accept="image/jpeg">
+                  <input class="upload" type="file" name="image" accept="image/*" data-validation-required-message="Вы не ввели сообщение">
                 </div><span class="color-element">Фото</span><span class="help-block text-danger"></span>
               </label>
               <label class="form-group"><span class="color-element">Введите код с картинки</span>
@@ -267,7 +267,7 @@
         </div>
       </section>
     </div>
-    <footer class="section fp-auto-height main-footer" style="background-image: url('static/img/general/map-footer.png');">
+    <footer class="main-footer" style="background-image: url('static/img/general/map-footer.png');">
       <div class="container container__footer">
         <div class="main-footer__logo"><a href="#"><img src="static/img/content/logo.png" alt=""></a><img class="separator" src="static/img/content/separator.png" alt="">
           <p>Дисклеймер компании</p>
