@@ -148,15 +148,16 @@ ul.main-nav_list
 			margin-right: 0
 
 .social_buttons
+
 	position: fixed
 	right: 0
 	top: 30%
-	display: inline-block
 	height: 200px
 	width: 50px
 	background-color: transparent
 	z-index: 20000
 	transition: all .25s ease
+	display: none
 	a
 		display: block
 		border-bottom: 1px solid $dark
@@ -289,10 +290,11 @@ html.mm-opening.mm-menu.mm-opened[class*=mm-pagedim]~#mm-blocker
 		font-weight: 500
 		display: inline-block
 .base
+	overflow: hidden
 	img
 		width: auto
 		height: 300px
-		overflow: hidden
+		
 
 .shape
   width: 300px
@@ -542,7 +544,7 @@ html.mm-opening.mm-menu.mm-opened[class*=mm-pagedim]~#mm-blocker
 			font-size: 40px
 			padding: 10px 0
 			display: block
-		
+
 .contacts
 	transform: rotate(-2deg)
 	.wrap_list
