@@ -55,7 +55,7 @@
 						</label>
 					</div>
 					<div class="menu-sort__wrap button-sort">
-						<a href="#">see all products</a>
+						<button class="checkbox-button">see all products</button>
 					</div>
 				</div>
 
@@ -64,7 +64,14 @@
 		
 		<div class="container">
 			<div class="product__sort">
-				Sort by <span>price <i class="fa fa-angle-down"></i></span>
+				<div class="product__descr">Sort by</div>
+				<div class="product__sort-button"><span>price</span> <i class="fa fa-angle-down"></i>
+					<div class="dropdown hidden">
+						<div><span class="dropdown__item">price</span> <i class="fa fa-angle-up"></i></div>
+						<div><span class="dropdown__item">name</span></div>
+					</div>
+				</div>
+				
 			</div>
 		</div>
 
