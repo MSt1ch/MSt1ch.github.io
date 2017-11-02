@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-lg-8 col-md-7">
+						<div class="header-logo">
+							<div class="logo-img">
+								<a href="#"><img src="img/logo.png" alt="logo"></a>
+							</div>
+							<div class="logo-descr">
+								<p class="logo-descr__top">Центральное хранилице данных</p>
+								<p class="logo-descr__bottom">Системы образования</p>
+							</div>
+						</div>	
+					</div>
+
+					<div class="col-lg-4 col-md-5">
+						<div class="admin-panel">
+							<div class="admin-panel-text">
+								<p class="admin-panel__top">Приветвуем Вас,</p>
+								<p class="admin-panel__name">Липницкая Зинаида Михайловна</p>
+								<p class="admin-panel__role">Администратор учреждения</p>
+							</div>
+							<div class="admin-panel-button">
+								<button class="button-myaccount">
+									<span class="button__icon button__icon_myaccount"></span>
+									<span class="button__text">Личный кабинет</span>
+								</button>
+								<button class="button-exit">
+									<span class="button__icon button__icon_exit"></span>
+									<span class="button__text">Выход</span>
+								</button>
+							</div>		
+						</div>
+					</div>
+					
+				</div>
+
+			</div>
+
+			<nav class="navbar">
+				<div class="container">
+						<button class="navbar-mobile-button"><i class="fa fa-bars" aria-hidden="true"></i></button>
+					<div class="navbar-wrap">
+						<ul class="navbar-list">
+							<li class="navbar-item"><a class="navbar-link" href="#">Справочники</a></li>
+							<li class="navbar-item"><a class="navbar-link" href="#" >Учреждения</a></li>
+							<li class="navbar-item"><a class="navbar-link" href="#" >Обр. процесс</a></li>
+							<li class="navbar-item"><a class="navbar-link" href="#" >Безопасность</a></li>
+							<li class="navbar-item"><a class="navbar-link" href="#" >Роли</a></li>
+							<li class="navbar-item"><a class="navbar-link" href="#" >Аудит</a></li>
+							<li class="navbar-item"><a class="navbar-link" href="#" >Новости</a></li>
+						</ul>
+					</div>			
+
+				</div>
+			</nav>
+
+
+		</header>	
+
+
+		<section class="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="main-title">
+							<h2 class="main-title__h2">кабинет администратора</h2>
+							<h1 class="main-title__h1">допуски по ролям</h1>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="title-list-inst">
+							для подключения / отключения Web API сервиса вам необходимо:
+						</div>
+						<ul class="list-inst">
+							<li class="list-inst__item">1. Определить роль, для которой будут вноситься изменения.</li>
+							<li class="list-inst__item">2. Подключить / отключить необходимые сервисы.</li>
+							<li class="list-inst__item">3. Сохранить внесенные изменения.</li>
+						</ul>
+					</div>
+
+					<div class="col-lg-8">
+						<div class="row">
+							<div class="title-role">
+								<h3 class="title-role__h3">Роль</h3>
+								<button class="title-role__status">Администратор учреждения</button>
+								<button class="title-role__exit">Вернуться</button>
+							</div>
+						</div>
+						<div class="row">
+							<table class="table-access">
+								<thead>
+									<tr>
+										<th align="left" colspan="2">Сервисы</th>										
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="table-access__row">
+										<td align="center">
+											<label>
+												<input type="checkbox" class="table-access-checkbox">
+													<i class="table-checkbox-style"></i>
+												</input>
+											</label>
+										</td>
+										<td align="left">Получение доступа к системе</td>
+									</tr>
+									<tr class="table-access__row">
+										<td align="center">
+											<label>
+												<input type="checkbox" class="table-access-checkbox">
+													<i class="table-checkbox-style"></i>
+												</input>
+											</label>
+										</td>
+										<td align="left">Распределение роллей по сотрудникам</td>
+									</tr>
+									<tr class="table-access__row">
+										<td align="center">
+											<label>
+												<input type="checkbox" class="table-access-checkbox">
+													<i class="table-checkbox-style"></i>
+												</input>
+											</label>
+										</td>
+										<td align="left">Формирование и распределение уникальных ролей</td>
+									</tr>
+									<tr class="table-access__row">
+										<td align="center">
+											<label>
+												<input type="checkbox" class="table-access-checkbox">
+													<i class="table-checkbox-style"></i>
+												</input>
+											</label>
+										</td>
+										<td align="left">Просмотр общей информации о заведении</td>
+									</tr>
+									<tr class="table-access__row">
+										<td align="center">
+											<label>
+												<input type="checkbox" class="table-access-checkbox" checked>
+													<i class="table-checkbox-style"></i>
+												</input>
+											</label>
+										</td>
+										<td align="left">Редактирование общей информации о заведении</td>
+									</tr>
+									<tr class="table-access__row">
+										<td align="center">
+											<label>
+												<input type="checkbox" class="table-access-checkbox">
+													<i class="table-checkbox-style"></i>
+												</input>
+											</label>
+										</td>
+										<td align="left">Редактирование контактной информации</td>
+									</tr>
+									<tr class="table-access__row">
+										<td align="center">
+											<label>
+												<input type="checkbox" class="table-access-checkbox" checked>
+													<i class="table-checkbox-style"></i>
+												</input>
+											</label>
+										</td>
+										<td align="left">Просмотр финансовой информации</td>
+									</tr>
+									<tr class="table-access__row">
+										<td align="center">
+											<label>
+												<input type="checkbox" class="table-access-checkbox">
+													<i class="table-checkbox-style"></i>
+												</input>
+											</label>
+										</td>
+										<td align="left">Редактирование финансовой информации</td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+
+						<div class="row">
+							<form class="title-key">
+								<h3 class="title-key__h3">Ключ</h3>
+								<div class="title-key__pass">
+									<input type="password" class="key__pass">
+								</div>
+								
+								<button class="title-key__submit">Применить</button>
+								<button class="title-key__exit">Отменить</button>
+							</form>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4">
+						<div class="footer-menu">
+							<a class="footer-menu__link" href="#">Концепция хранилица данных</a>
+							<a class="footer-menu__link" href="#">Структура данных</a>
+							<a class="footer-menu__link" href="#">API документация</a>
+							<a class="footer-menu__link" href="#">Как подключиться</a>
+							<a class="footer-menu__link" href="#">Демо версия</a>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4">
+						<div class="footer-logo">
+							<a class="footer-logo__img" href="#"><img src="img/logo.png" alt="logo"></a>
+							<p class="footer-logo__top">Центральное</p>
+							<p class="footer-logo__middle">хранилице данных</p>
+							<p class="footer-logo__bottom">Системы образования</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4">
+						<div class="footer-contact">
+							<div class="contact-wrap">
+								<div class="footer-contact__address">Республика Беларусь<br>г.Минск, ул Революционная 11<br>220050</div>
+								<div class="footer-contact__tel"><i class="fa fa-phone"></i> <a href="tel:+375172095797">+375172095797</a></div>
+								<div class="footer-contact__mail"><i class="fa fa-envelope"></i><a href="mailto:support@edu.by">support@edu.by</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+
+</div>
+<link rel="stylesheet" href="css/main.min.css">
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
