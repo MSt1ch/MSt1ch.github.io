@@ -41,8 +41,10 @@ body
 	color: #fff
 
 
+
+
 .color_white
- 	color: #fff	
+	color: #fff	
 .dark-section
 	background-color: $dark
 .green-section
@@ -57,12 +59,14 @@ body
 .main-header
 	height: 70px
 	margin-bottom: 0
+	position: relative
 	&::after
+		bottom: -20px
+		position: absolute
 		content: ''
 		background-color: $accent
-		width: 95%
+		width: 100%
 		height: 1px
-		margin-left: 2.5%
 		display: inline-block
 		transform: rotate(-2deg)
 	.main-nav
@@ -103,7 +107,7 @@ body
 		border-bottom-color: #fff
 		border-left-color: $accent
 .icon-logo
-	animation: animate-icon-logo 2s infinite linear alternate
+	animation: animate-icon-logo 2s 5 linear alternate
 
 .logo-icon.mobile
 	position: static
@@ -126,24 +130,38 @@ ul.main-nav_list
 	//left: -1%
 	li
 		display: inline-block
-		margin-right: 20px
+		margin-right: 40px
 		text-transform: uppercase
 		font-size: 15px
 		font-weight: 400
+		position: relative
 		a
+			position: relative
 			color: #FFF
-			transition: color .25s ease-out
+			transition: all .25s ease-out
 			padding-bottom: 3px
-			&:hover
-				text-decoration: none
-				color: $accent
-				border-bottom: 3px solid $accent	
+			border-bottom: 3px solid transparent
 
-		&.active
-			a
+			&:before
+				content: ''
+				position: absolute
+				bottom: 0
+				width: 0%
+				height: 2px
+				background-color: $accent	
+				border-radius: 3px
+				transition: all .25s ease-out
+			&:hover
 				color: $accent
-				border-bottom: 3px solid $accent
-				cursor: default
+				&:before	
+					width: 100%
+
+		// &.active
+		// 	a
+		// 		color: $accent
+		// 		cursor: default
+		// 		&:before
+		// 			width: 100%
 		&:last-child
 			margin-right: 0
 
@@ -157,62 +175,67 @@ ul.main-nav_list
 	background-color: transparent
 	z-index: 20000
 	transition: all .25s ease
-	display: none
+	// display: none
 	a
 		display: block
 		border-bottom: 1px solid $dark
-		border-left: 1px solid $dark
+		border-left: 1px solid $accent
 		line-height: 1
 		padding: 10px 0
 		transition: color .25s ease
 		background-color: $accent
-		&:hover
-			border-bottom-color: #fff
-			i
-				color: #fff
-		&:first-child
-			border-top: 1px solid $dark
-
 		i
 			font-size: 30px
 			color: $dark
 			transition: color .25s ease
+		&:first-child
+			border-top: 1px solid $accent
+			border-radius: 5px 0 0 0 	
+		&:last-child
+			border-radius: 0 0 0 5px
+			border-bottom-color: $accent
+		&:hover
+			border-bottom-color: #fff	
+			i
+				color: #fff
 
-.scroll_button a
-  padding-top: 10px
-  color: $accent
-  opacity: .7
-  transition: opacity .2s ease
-  display: inline-block
-  40px
-  &:hover
-  	opacity: 1
 
-  	span.scroll_button__border
-  		border-color: $accent
-  span.scroll_button__border
-    position: absolute
-    bottom: 60px
-    left: 50%
-    width: 24px
-    height: 24px
-    margin-left: -12px
-    border-left: 3px solid $accent
-    border-bottom: 3px solid #fff
-    transform: rotateZ(-45deg)
-    animation: sdb06 2s infinite
-    box-sizing: border-box
+.scroll_button
+	a
+		padding-top: 30px
+		color: $accent
+		opacity: .7
+		transition: opacity .2s ease
+		display: inline-block
+		&:hover
+			opacity: 1
+
+		span.scroll_button__border
+			border-color: $accent
+
+span.scroll_button__border
+	position: absolute
+	bottom: 60px
+	left: 50%
+	width: 24px
+	height: 24px
+	margin-left: -12px
+	border-left: 3px solid $accent
+	border-bottom: 3px solid #fff
+	transform: rotateZ(-45deg)
+	animation: sdb06 2s infinite
+	box-sizing: border-box
 
 
 @keyframes sdb06
-  0%
-    transform: rotateY(0) rotateZ(-45deg) translate(0, 0)
-    opacity: 0
-  50%
-    opacity: 1
-  100%
-    transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px)
-    opacity: 0
+	0%
+		transform: rotateY(0) rotateZ(-45deg) translate(0, 0)
+		opacity: 0
+	50%
+		opacity: 1
+	100%
+		transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px)
+		opacity: 0
 
 
 #my-menu
@@ -275,146 +298,152 @@ html.mm-opening.mm-menu.mm-opened[class*=mm-pagedim]~#mm-blocker
 				&::before
 					color: $accent
 			
-	 	&.active
+		&.active
 			&>a
 				color: $accent
 
-			
-.portfolio
+	
+.go-to-top
+	position: fixed
+	width: 40px
+	height: 40px
+	bottom: 20px
+	right: 20px
+	display: none
+	display: inline-block
+	background-color: rgba(46,179,152,.7)
+	border-radius: 4px
+	cursor: pointer
+	text-align: center
+	z-index: 300
+	display: none
+	i
+		font-size: 30px
+		padding: 5px
+
+
+section.portfolio
 	padding-top: 60px
 	margin-bottom: 100px
 	text-align: center
 	h1
 		
 		text-transform: uppercase
-		font-weight: 500
+		font-weight: 600
 		display: inline-block
-.base
-	overflow: hidden
-	img
-		width: auto
-		height: 300px
+// .base
+// 	overflow: hidden
+
 		
 
 .shape
-  width: 300px
-  height: 300px
-  position: relative
-  margin: 0 auto 50px
-  .overlay
-    display: block
-    width: 310px
-    height: 310px
-    position: absolute
-    top: -5px
-    left: -5px
-    transform: scale(1, 1)
-    transition-timing-function: ease-out
-    transition-duration: 0.6s
-    z-index: 500
-    pointer-events: none
-    background-repeat: no-repeat
-    &.round
-      background: url(../img/round.png)
-    &.hexagon
-      background: url(../img/hexagon.png)
-    &.pentagon
-      background: url(../img/pentagon.png)
-  &:hover
-    .overlay
-    	transform: scale(1.07, 1.07)
-    	transition-timing-function: ease-out
-    	transition-duration: 0.3s
-      
-    .bg
-      
-      background-color: $accent
-      opacity: 0.8
-      display: block
-    .details
-      
-      opacity: 1
-      z-index: 450
-      display: block
-  .bg, .details
-    position: absolute
-    width: 300px
-    height: 300px
-    display: table-cell
-    vertical-align: middle
-    text-align: center
-    top: 0
-    left: 0
-    opacity: 0
-    transition: all 0.3s ease
-    display: none
-  .bg
-    background: #4b5a78
-  .details
-    span.heading
-      font-family: 'Roboto Condensed', serif
-      font-size: 30px
-      display: block
-      margin-top: 70px
-      color: #fff
-      text-decoration: none
-    p
-      font-family: 'Abel', sans-serif
-      color: #fff
-      width: 70%
-      font-size: 14px
-      margin: 0 auto
-  a.button
-    padding: 5px 15px
-    font-family: 'Abel', sans-serif
-    font-size: 14px
-    border-radius: 20px
-    background: #2f3644
-    text-decoration: none
-    color: #fff
-    display: block
-    width: 105px
-    margin: 0 auto
-    text-align: center
-    margin-top: 15px
-    transition: all .25s ease
-    &:hover
-      background: #fff
-      color: #2f3644
+	width: 100%
+	height: 100%
+	position: relative
+	margin: 0 auto 50px
+	box-shadow: 2px 10px 30px rgba(2,2,2,0.35)
+	transition: all .2s ease-out
+	.overlay
+		display: block
+		width: 100%
+		height: 100%
+		position: absolute
+		transition-timing-function: ease-out
+		transition-duration: 0.6s
+		z-index: 500
+		pointer-events: none
+		background-repeat: no-repeat
 
-.wrap-alignment-text
+	&:hover	
+		transform: scale(1.2)		
+		.bg
+			background-color: $accent
+			opacity: 0.8
+			display: block
+		.details
+			opacity: 1
+			z-index: 450
+			display: block
+	.bg, .details
+		position: absolute
+		width: 100%
+		height: 100%
+		display: table-cell
+		vertical-align: middle
+		text-align: center
+		top: 0
+		left: 0
+		opacity: 0
+		transition: all 0.3s ease
+	.bg
+		background: #4b5a78
+	
+	a.button
+		padding: 5px 15px
+		font-family: 'Abel', sans-serif
+		font-size: 14px
+		border-radius: 20px
+		background: #2f3644
+		text-decoration: none
+		color: #fff
+		display: block
+		width: 105px
+		margin: 0 auto
+		text-align: center
+		margin-top: 15px
+		transition: all .25s ease
+		&:hover
+			background: #fff
+			color: #2f3644
 
-	transform: rotate(2deg)
+.details
+	span.heading
+		font-size: 30px
+		display: block
+		color: #fff
+		text-decoration: none
+	p
+		color: #fff
+		width: 90%
+		font-size: 14px
+		margin: 0 auto
+	&:hover
+		cursor: default
 
-.rotate_deg
-	transform: rotate(-2deg)			
+.wrap-rotate-deg
+	width: 100%
+	text-align: center
+	height: 100%
+
+
 
 .skills
-	height: 250px
-	color: $dark
+	position: relative
+	min-height: 190px
+	color: $accentText
 	width: 100%
+	padding-bottom: 30px
 	margin-bottom: 100px
 	padding-top: 30px
-	.skills-wrap
-		transform: rotate(2deg)
-		height: 65px
-		margin-top: 40px
-		text-align: center
-		
-		em
-			display: inline-block	
-			transition: all .25s ease
-			font-family: 'tech-icons'
-			font-size: 50px
-			color: $dark
-			margin-right: 10px
-			line-height: 1
-			&:hover
-				font-size: 60px
-				color: #fff
+	
+
+.skills-wrap-list
+	min-height: 65px
+	em
+		display: inline-block	
+		transition: all .25s ease
+		font-family: 'tech-icons'
+		font-size: 50px
+		color: $accentText
+		margin-right: 10px
+		line-height: 1
+		cursor: default
+		&:hover
+			transform: scale(1.4)
+			color: #fff
 .h2
 	text-transform: uppercase
-	font-weight: 700
+	font-weight: 500
 	text-align: center	
 
 
@@ -427,112 +456,51 @@ html.mm-opening.mm-menu.mm-opened[class*=mm-pagedim]~#mm-blocker
 	100%
 		transform: scale(1)			
 .animate-icon._1
-	animation: animate-icons 2s infinite ease-out alternate
+	animation: animate-icons 2s 5 ease-out alternate
 .animate-icon._2
-	animation: animate-icons 2s .5s infinite ease-out alternate
+	animation: animate-icons 2s .5s 5 ease-out alternate
 .animate-icon._3
-	animation: animate-icons 2s 1s infinite ease-out alternate
+	animation: animate-icons 2s 1s 5 ease-out alternate
 .animate-icon._4
-	animation: animate-icons 2s 1.5s infinite ease-out alternate
+	animation: animate-icons 2s 1.5s 5 ease-out alternate
 .animate-icon._5
-	animation: animate-icons 2s 2s infinite ease-out alternate
+	animation: animate-icons 2s 2s 5 ease-out alternate
 .animate-icon._6
-	animation: animate-icons 2s 2.5s infinite ease-out alternate
+	animation: animate-icons 2s 2.5s 5 ease-out alternate
 .animate-icon._7
-	animation: animate-icons 2s 3s infinite ease-out alternate
+	animation: animate-icons 2s 3s 5 ease-out alternate
 .animate-icon._8
-	animation: animate-icons 2s 3.5s infinite ease-out alternate
+	animation: animate-icons 2s 3.5s 5 ease-out alternate
 .animate-icon._9
-	animation: animate-icons 2s 4s infinite ease-out alternate
+	animation: animate-icons 2s 4s 5 ease-out alternate
 .animate-icon._10
-	animation: animate-icons 2s 4.5s infinite ease-out alternate
+	animation: animate-icons 2s 4.5s 5 ease-out alternate
 
-.about_me
+section.about_me
 	margin-bottom: 100px
 	.about_me__text
-		color: $accent
+		color: #fff
 
-.hexagon_image
-  overflow: hidden
-  width: 100%
-  margin: 0 auto
-  &:after
-    content: ""
-    display: block
-    clear: both
-  .hexagon_image__wrap
-    position: relative
-    width:  80%   // = (100-2.5) / 3.5  27.85714285714286%
-    padding-bottom: 92.37875288683603%     // =  width /0.866  32.16760145166612%
-    float: left
-    overflow: hidden
-    visibility: hidden
-    transform: rotate(-60deg) skewY(30deg)
-    *
-      position: absolute
-      visibility: visible
-    > .hexagon_image__text
-      width: 100%
-      height: 100%
-      text-align: center
-      color: #fff
-      overflow: hidden
-      transform: skewY(-30deg) rotate(60deg)
-    img
-      left: -100%
-      right: -100%
-      width: auto
-      height: 100%
-      margin: 0 auto
-  .hexagon_image__text
-    h3, p
-      width: 90%
-      padding: 0 5%
-      background-color: #008080
-      background-color: rgba(0, 128, 128, 0.8)
-      font-family: 'Raleway', sans-serif
-      transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out
-  .hexagon_image__wrap
-    h3
-      bottom: 110%
-      font-weight: normal
-      font-size: 1.5em
-      padding-top: 100%
-      padding-bottom: 100%
-      &:after
-        content: ''
-        display: block
-        position: absolute
-        bottom: -1px
-        left: 0
-        width: 100%
-        text-align: center
-        z-index: 1
-        border-bottom: 2px solid #fff
-    p
-      font-size: 1.5em
-      padding-top: 50%
-      top: 110%
-      padding-bottom: 50%
-    .hexagon_image__text:hover
-      h3
-        bottom: 40%
-        padding-bottom: 10%
-        width: 100%
-      p
-        top: 40%
-        padding-top: 10%
-        width: 100%
+.about_me__img
+	border-radius: 3px
+	box-shadow: 2px 10px 30px rgba(2,2,2,0.35)
+	max-width: 80%
+	margin: 0 auto 30px
+	img
+
+		border-radius: 3px
+	
+
+
 
 .personal-qualities
-	min-height: 190px
+	min-height: 250px
 	text-align: center
-	padding-top: 40px
+	
 	margin-bottom: 100px
 	font-family: roboto
 	.wrap_qualities
-
-		color: $dark
+		color: $accentText
 		font-size: 16px
 		text-transform: uppercase
 		line-height: 1.3
@@ -546,7 +514,7 @@ html.mm-opening.mm-menu.mm-opened[class*=mm-pagedim]~#mm-blocker
 			display: block
 
 .contacts
-	transform: rotate(-2deg)
+
 	.wrap_list
 		text-align: center
 	.contact_list
@@ -599,6 +567,7 @@ html.mm-opening.mm-menu.mm-opened[class*=mm-pagedim]~#mm-blocker
 						padding: 10px 
 .contact-logo_wrap
 	margin-top: 30px
+	margin-bottom: 60px
 .box
 	height: $box_h
 	width: $box_h
@@ -764,7 +733,7 @@ html.mm-opening.mm-menu.mm-opened[class*=mm-pagedim]~#mm-blocker
 	100%
 		transform: scale(1)
 .letter_s
-	animation: animateS $duration infinite alternate				
+	animation: animateS $duration 5 alternate				
 
 @keyframes animatedot
 	0%
@@ -778,7 +747,7 @@ html.mm-opening.mm-menu.mm-opened[class*=mm-pagedim]~#mm-blocker
 	100%
 		opacity: 0
 .logo-dot
-	animation: animatedot $duration infinite normal	
+	animation: animatedot $duration 5 normal	
 
 
 
