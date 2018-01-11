@@ -1,0 +1,89 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*html, body{
+  height: 100%;
+  width: 100%;
+}*/
+
+input{
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+}
+
+input[type="submit"]{
+  background-color: #fff; 
+  border: 1px solid red;
+  border-radius: 5px;
+}
+input[type="submit"]:hover{
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+}
+
+form{
+  display: inline-block;
+  width: 200px;
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; 
+  padding: 50px;
+  text-align: center;
+}
+
+.text{
+  margin-bottom: 40px;
+  min-height: 30px
+}
+.popup-wrap{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0,.6);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+.popup{
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  z-index: 10;
+  margin: 10% auto;
+  cursor: initial;
+  padding: 100px 20px 0;
+  font-size: 20px;
+}
+.hidden{
+  display: none;
+}
+.popup__close{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0,0,0,.3);
+}
+
+.popup__close:hover{
+  cursor: pointer;
+  background-color: rgba(0,0,0,.8);
+}

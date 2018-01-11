@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Главная страница
+    </title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="text"></div>
+      <form action="">
+        <input class="fname" type="text" name="first_name" placeholder="Имя">
+        <input type="text" name="last_name" placeholder="Фамилия">
+        <input type="number" name="phone" placeholder="Телефон">
+        <input class="btn_submit" type="submit" value="Отправить">
+      </form>
+
+      
+      <div class="popup-wrap hidden">
+        <div class="popup">
+          <div class="popup__content">
+            <span>Спасибо!</span><br>
+            <span>Форма успешно отправлена</span>
+          </div>
+          <div class="popup__close"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
