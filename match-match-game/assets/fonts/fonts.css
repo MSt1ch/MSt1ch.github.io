@@ -1,0 +1,76 @@
+@font-face {
+			font-family: "fontawesome";
+			src: url("../fonts/fontawesome/fontawesome-webfont.eot");
+			src: url("../fonts/fontawesome/fontawesome-webfont.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/fontawesome/fontawesome-webfont.woff") format("woff"),
+			url("../fonts/fontawesome/fontawesome-webfont.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+}
+
+
+@font-face {
+		font-family: "GentiumBasicBold";
+		src: url("../fonts/Gentium-Basic/Gentium-Basic.eot");
+		src: url("../fonts/Gentium-Basic/Gentium-Basic.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/Gentium-Basic/Gentium-Basic.woff") format("woff"),
+		url("../fonts/Gentium-Basic/Gentium-Basic.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+}
+
+@font-face {
+		font-family: "LatoRegular";
+		src: url("../fonts/Lato-Regular/Lato-Regular.eot");
+		src: url("../fonts/Lato-Regular/Lato-Regular.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/Lato-Regular/Lato-Regular.woff") format("woff"),
+		url("../fonts/Lato-Regular/Lato-Regular.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+}
+@font-face {
+		font-family: "OpenSans";
+		src: url("../fonts/OpenSans-Italic/OpenSans-Italic.eot");
+		src: url("../fonts/OpenSans-Italic/OpenSans-Italic.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/OpenSans-Italic/OpenSans-Italic.woff") format("woff"),
+		url("../fonts/OpenSans-Italic/OpenSans-Italic.ttf") format("truetype");
+		font-style: italic;
+		font-weight: normal;
+}
+
+@font-face {
+		font-family: "OpenSans";
+		src: url("../fonts/OpenSans-Regular/OpenSans-Regular.eot");
+		src: url("../fonts/OpenSans-Regular/OpenSans-Regular.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/OpenSans-Regular/OpenSans-Regular.woff") format("woff"),
+		url("../fonts/OpenSans-Regular/OpenSans-Regular.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+}
+@font-face {
+		font-family: "OpenSans";
+		src: url("../fonts/OpenSans-Bold/OpenSans-Bold.eot");
+		src: url("../fonts/OpenSans-Bold/OpenSans-Bold.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/OpenSans-Bold/OpenSans-Bold.woff") format("woff"),
+		url("../fonts/OpenSans-Bold/OpenSans-Bold.ttf") format("truetype");
+		font-style: normal;
+		font-weight: bold;
+}
+
+@font-face {
+		font-family: "YesevaOneRegular";
+		src: url("../fonts/YesevaOne-Regular/YesevaOne-Regular.eot");
+		src: url("../fonts/YesevaOne-Regular/YesevaOne-Regular.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/YesevaOne-Regular/YesevaOne-Regular.woff") format("woff"),
+		url("../fonts/YesevaOne-Regular/YesevaOne-Regular.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+}
+
+@font-face {
+		font-family: "Georgia";
+		src: url("../fonts/Georgia/Georgia.woff") format("woff"),
+		url("../fonts/Georgia/Georgia.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+}

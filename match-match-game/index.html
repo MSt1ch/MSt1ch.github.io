@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <title>Match-match game</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+
+          <ul class="menu hide">
+            <li class="menu-item"><button class="menu-button menu-skirt">Skirt cards</button>
+              <ul class="submenu submenu-skirt hide">
+                <li class="submenu-item _0 active" data-skirt='0'></li>
+                <li class="submenu-item _1" data-skirt='1'></li>
+                <li class="submenu-item _2" data-skirt='2'></li>
+              </ul>
+            </li>
+            <li class="menu-item "><button class="menu-button menu-difficulty">Game difficulty</button>
+              <ul class="submenu submenu-difficulty hide">
+                <li class="submenu-difficulty-item active" data-difficulty='0'>Low (5 x 2)</li>
+                <li class="submenu-difficulty-item" data-difficulty='1'>Medium (6 x 3)</li>
+                <li class="submenu-difficulty-item" data-difficulty='2'>Hight (8 x 3)</li>
+              </ul>
+            </li>
+            <li class="menu-item right"><button id="button-new-game" class="menu-button" data-state='0'>New Game</button></li>
+            <li class="menu-item right"><button id="button-score" class="menu-button">Score table</button></li>
+          </ul>
+
+      </header>
+      <main>
+
+
+        <section class="section-playing-field">
+          <div class="wrap-descr-and-form">
+            <div class="section-desc-game">
+              <h1>Welcome to match-match game!</h1>
+              <div class="descr-rules">
+                <h3 class="descr-rules__title">Description game:</h3>
+                <div class="descr-rules__text">Find the Pair is a memory game that requires players to spot the identical pairs in each level. Match pairs of shapes together with the help of your memory. Can you find them all?</div>
+
+              </div>
+            </div>
+            <div class="main-form">
+              <form onsubmit="addUser(event); return false" class="user-form" action="">
+                <label>First Name<br>
+                  <input type="text" name="lname" placeholder="your first name *" required>
+                </label>
+                <label>Last Name<br>
+                  <input type="text" name="fname" placeholder="your last name *" required>
+                </label>
+                <label>Email<br>
+                  <input type="email" name="email" placeholder="your email *" required>
+                </label>
+
+                <input class="form-submit"  type="submit" value="Register now!">
+              </form>
+            </div>
+          </div>
+          <div class="game-timer">
+            <p>TIME:
+              <input class="game-timer__clock" type='text' name='clock' size="12" maxlength="12" value="00:00.00">
+            </p>
+          </div>
+           <div class="game-field hide">
+              <div class="game-card "></div>
+              <div class="game-card "></div>
+              <div class="game-card "></div>
+              <div class="game-card "></div>
+              <div class="game-card "></div>
+              <div class="game-card "></div>
+              <div class="game-card "></div>
+              <div class="game-card "></div>
+              <div class="game-card "></div>
+              <div class="game-card "></div>
+           </div>
+           <div class="congratulation-popup hide">
+             <div class="congratulation-popup-wrapper">
+                <button class="popup__button-close -congratulation"><i class="fa fa-times"></i></button>
+                <div class="congratulation-popup-text">
+
+                </div>
+             </div>
+           </div>
+           <div class="score-popup hide">
+              <div class="score-popup-wrapper">
+                <button class="popup__button-close -score"><i class="fa fa-times"></i></button>
+                <div class="score-popup-table"></div>
+              </div>
+           </div>
+          <div class="playing-field-overlay hide"></div>
+        </section>
+        <div class="popups-overlay hide"></div>
+
+
+
+      </main>
+
+
+      <footer class="footer">
+
+      </footer>
+    </div>
+
+  <script type="text/javascript" src="script/script.js">
+
+  </script>
+  </body>
+</html>
