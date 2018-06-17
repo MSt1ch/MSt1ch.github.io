@@ -807,6 +807,7 @@ input{
 
 
 .-submit-popup, .calculation-submit{
+  font-style: normal;
   display: block;
   margin: 0 auto;
   text-transform: uppercase;
@@ -842,7 +843,6 @@ input{
 
 .speech-submit{
   margin-top: 20px;
-  width: 200px;
 }
 
 .speech-repeat-btn{
