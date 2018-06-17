@@ -862,6 +862,11 @@ section.section.\--about{
 
 }
 
+.work-big-size{
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
 .work-logo{
   text-align: center;
 }
