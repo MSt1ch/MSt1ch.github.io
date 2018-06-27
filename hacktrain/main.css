@@ -641,9 +641,9 @@ body {
   50% {
     background-position: 0px 100%, 0 0;
   }
-  /* 75% {
+  75% {
     background-position: 60% 100%, 0 0;
-  } */
+  }
   100% {
     background-position: 100% 100%, 0 0;
   }
@@ -674,6 +674,24 @@ body {
   .train-train{
     left: -70%;
     width: 200%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .traing-ground {
+    /* -webkit-animation-duration: none;
+    animation-duration: none;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    animation: none;
+    opacity: 1; */
+
+    -webkit-animation: ground 35s linear  infinite;
+    -moz-animation: ground 35s linear  infinite;
+    -o-animation: ground 35s linear  infinite;
   }
 }
 
