@@ -678,20 +678,15 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .traing-ground {
+  .traing-ground{
     /* -webkit-animation-duration: none;
     animation-duration: none;
     -webkit-animation-fill-mode: none;
-    animation-fill-mode: none;
+    animation-fill-mode: none; */
     -webkit-animation: none;
     -moz-animation: none;
     -o-animation: none;
     animation: none;
-    opacity: 1; */
-
-    -webkit-animation: ground 35s linear  infinite;
-    -moz-animation: ground 35s linear  infinite;
-    -o-animation: ground 35s linear  infinite;
   }
 }
 
