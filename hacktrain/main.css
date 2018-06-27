@@ -641,9 +641,9 @@ body {
   50% {
     background-position: 0px 100%, 0 0;
   }
-  75% {
+  /* 75% {
     background-position: 60% 100%, 0 0;
-  }
+  } */
   100% {
     background-position: 100% 100%, 0 0;
   }
