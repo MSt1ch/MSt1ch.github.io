@@ -476,7 +476,7 @@ body {
   background-color: #fff;
 }
 
-.train-wrap{
+.image-animation-wrap{
   background: url(./img/bg-clouds.png);
   width: 100%;
   height: 100%;
@@ -485,7 +485,7 @@ body {
 
 
 }
-.train-sky{
+.image-animation-sky{
   position: absolute;
   width: 100%;
   top: 0;
@@ -518,7 +518,7 @@ body {
     }
 }
 
-.train-sun {
+.image-animation-sun {
   position: absolute;
   left: 0;
   bottom: -30%;
@@ -593,7 +593,7 @@ body {
 }
 
 
-.train-clouds{
+.image-animation-clouds{
   position: absolute;
   top: 10px;
   height: 300px;
@@ -601,7 +601,7 @@ body {
 
 }
 
-.train-clouds-item._item-1{
+.image-animation-clouds-item._item-1{
   width: 400px;
   height: 170px;
   position: absolute;
@@ -613,7 +613,7 @@ body {
   -o-animation: clouds 15s linear infinite
 }
 
-.train-clouds-item._item-2{
+.image-animation-clouds-item._item-2{
   width: 400px;
   height: 270px;
   position: absolute;
@@ -626,7 +626,7 @@ body {
   -o-animation: clouds-2 15s linear infinite
 }
 
-.train-clouds-item._item-4{
+.image-animation-clouds-item._item-4{
   width: 400px;
   height: 220px;
   position: absolute;
@@ -639,7 +639,7 @@ body {
   -o-animation: clouds 20s linear infinite;
 }
 
-.train-clouds-item._item-3{
+.image-animation-clouds-item._item-3{
   width: 400px;
   height: 220px;
   position: absolute;
@@ -681,7 +681,7 @@ body {
   }
 }
 
-.train-train{
+.image-animation-train{
   position: absolute;
   bottom: 340px;
   background: url(./img/train.png) no-repeat;
@@ -730,11 +730,11 @@ body {
   }
 }
 
-.traing-ground{
+.image-animation-ground{
   position: absolute;
   bottom: 0;
   height: 425px;
-  width: 200%;
+  width: 100%;
   background: url(./img/ground-1.png) repeat-x 0 100% fixed;
   -webkit-animation: ground 10s linear  infinite;
   -moz-animation: ground 10s linear  infinite;
@@ -754,49 +754,110 @@ body {
 
 
 @media only screen and (max-width: 1300px) {
-  .train-train{
+  .image-animation-train{
     left: -5%;
   }
 }
 
 @media only screen and (max-width: 1150px) {
-  .train-train{
+  .image-animation-train{
     left: -25%;
     width: 180%;
   }
 }
 
 @media only screen and (max-width: 992px) {
-  .train-train{
+  .image-animation-train{
     left: -40%;
     width: 180%;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .train-train{
+  .image-animation-train{
     left: -70%;
     width: 200%;
   }
 }
-/*
-@media only screen and (max-width: 768px) {
-  .traing-ground{ */
-    /* -webkit-animation-duration: none;
-    animation-duration: none;
-    -webkit-animation-fill-mode: none;
-    animation-fill-mode: none; */
-    /* -webkit-animation: none;
-    -moz-animation: none;
-    -o-animation: none;
-    animation: none;
-  }
-} */
+
 
 @media only screen and (max-width: 600px) {
-  .train-train{
+  .image-animation-train{
     left: -100%;
     width: 400%;
+  }
+  .image-animation-train{
+    bottom: 200px;
+  }
+  .image-animation-ground{
+    height: 200px;
+  }
+
+  .image-animation-sky{
+    animation: sky-mobile 15s infinite linear;
+  }
+
+  @keyframes sky-mobile {
+    0% {
+      background: darkslateblue;
+      height: calc(100% - 200px);
+      }
+    50% {
+      background: skyblue;
+      box-shadow: 0 -400px 300px -300px steelblue inset;
+      }
+    60% {
+      height: calc(100% - 100px);
+     }
+    85% {
+     background: darkslateblue;
+     box-shadow: 0 -400px 300px -300px orangered inset;
+     height: calc(100% - 140px);
+     }
+    100% {
+      background: darkslateblue;
+      height: calc(100% - 100px);
+      }
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 850px) and (orientation : landscape) {
+  .image-animation-train{
+    left: -100%;
+    width: 250%;
+  }
+  .image-animation-train{
+    bottom: 200px;
+  }
+  .image-animation-ground{
+    height: 200px;
+  }
+
+  .image-animation-sky{
+    animation: sky-mobile 15s infinite linear;
+  }
+
+  @keyframes sky-mobile {
+    0% {
+      background: darkslateblue;
+      height: calc(100% - 200px);
+      }
+    50% {
+      background: skyblue;
+      box-shadow: 0 -400px 300px -300px steelblue inset;
+      }
+    60% {
+      height: calc(100% - 100px);
+     }
+    85% {
+     background: darkslateblue;
+     box-shadow: 0 -400px 300px -300px orangered inset;
+     height: calc(100% - 140px);
+     }
+    100% {
+      background: darkslateblue;
+      height: calc(100% - 100px);
+      }
   }
 }
 
